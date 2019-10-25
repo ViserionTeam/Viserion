@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text }  from 'react-native';
+import { View, Text } from 'react-native';
 
-export default function Main(){
-    return(
+export default function Main() {
+    return (
+        <View>
+            <Text>HelloWorld</Text>
+        </View>
     
-    <View>
-            <Text>ola</Text>
-    </View>
-)
+    );
     
 }
