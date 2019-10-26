@@ -1,8 +1,17 @@
 import React from 'react';
-import { View, Text }  from 'react-native';
+import { View, Text, Button, Image }  from 'react-native';
 
-export default function Warn(){
-    return <View>
+import triangle_exclamation from '../../assets/triangle_exclamation.png';
 
-    </View>
+export default function Warn({navigation}){
+    return (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Image source={triangle_exclamation}></Image>
+            <Text style={{ fontSize: 30 }}>This is a modal!</Text>
+            <Button
+            onPress={() => navigation.navigate('Main')}
+            title="Dismiss"
+            />
+        </View>
+    );
 }
