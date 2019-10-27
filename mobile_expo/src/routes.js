@@ -4,13 +4,17 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Main from './pages/Main/Main';
 import Warn from './pages/Warn/Warn';
+import Cam from './pages/Camera/Camera'
 
 const Routes = createAppContainer(
     createStackNavigator({
         Main,
         Warn,
+        Cam,
     },
+    
     {
+        initialRouteName: 'Warn',
         headerMode: 'none',
         mode: 'modal',
         transitionConfig: () => ({
